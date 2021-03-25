@@ -42,8 +42,11 @@ npm run start
 ```zsh
 ops secrets:set -k SLACK_BOT_TOKEN -v XXXXXXXX
 ops secrets:set -k SLACK_SIGNING_SECRET -v XXXXXXX
+ops init cto-ai/bolt-js && cd bolt-js-master
 ops build . && ops publish . && ops start bolt-js:0.1.0
 ```
+Now just add the service URL to your Slack App.
+
 ## Contributing
 
 ### Issues and questions
